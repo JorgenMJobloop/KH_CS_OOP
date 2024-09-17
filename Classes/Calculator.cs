@@ -19,8 +19,8 @@ public class Calculator : ICalculator
     {
         if(b == 0 || b.Equals(0)) 
         {
-            //throw new Exception("Cannot divide by 0!");
-            Console.WriteLine("Cannot divide by 0");
+            throw new Exception("Cannot divide by 0!");
+            //Console.WriteLine("Cannot divide by 0");
         }
         return a / b;
     }
